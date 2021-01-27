@@ -1,0 +1,334 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+body{
+    margin: 0;
+    margin-bottom: 40px;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:whitesmoke;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content{
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: auto;
+}
+.header{
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    height: 800px;
+    width: 100%;
+    background-image: url(../img/bg-carnes-naveda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont_header_main{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5662640056022409) 0%, rgba(224,79,38,0) 100%);
+}
+.cont_header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.cont_logo_header{
+    width: 400px;
+}
+.cont_logo_header img{
+    padding-left: 80px;
+    width: 270px;
+    height: 120px;
+}
+.list_navegation{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 800px;
+    text-align: center;
+}
+.list_navegation ul{
+    display: flex;
+    width: 600px;
+
+}
+.list_navegation ul li{
+    margin-left: 50px;
+    list-style: none;
+}
+.list_navegation ul li a{
+    font-size: 16px;
+    font-family: 'questrial';
+    text-decoration: none;
+    color: white;
+}
+.cont-header_bottom{
+    height: 520px;
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+    background: rgb(224,79,38);
+    background: linear-gradient(180deg, rgba(224,79,38,0) 0%, rgba(0,0,0,0.5662640056022409) 100%);
+}
+.titles{
+    height: 520px;
+    width: 1200px;
+    margin: auto;
+    text-align:center;
+    overflow: hidden;
+}
+.titles h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'maven pro';
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 2px;
+    width: 1000px;
+}
+.titles p{
+    font-size: 30px;
+    color: white;
+    font-family: 'maven pro';
+    padding-bottom: 10px;
+    margin:auto;
+    margin-bottom: 80px;
+    width: 700px;
+}
+.titles a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'questrial';
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background:rgba(171,38,9,0.927608543417367);
+    border-radius: 25px;
+}
+.titles a:hover{
+    background-color: #DF3A01;
+    color: white;
+}
+.segundo{
+    display: none;
+}
+.tercero{
+    display: none;
+}
+
+/*SELECTION*/
+
+.seccion_eleccion{
+    width: 1200px;
+    height: 450px;
+    padding-top: 40px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 2px;
+    border-bottom: 3px solid orangered;
+}
+.class_global{
+    position: absolute;
+    width: 1200px;
+    height: 450px;
+    overflow: hidden;
+}
+.slide_move{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+.slide_move input{
+    display: none;
+
+}
+.avg_slide{
+    background-color: rgba(124, 49, 32, 0.4);
+    width: 1200px;
+    height: 400px;
+    position: absolute;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+ }
+.slide img{
+    width: 1200px;
+    height: 400px;
+    position: absolute;
+ }
+ /*EDICION DE TEXTO EN SLIDER*/
+.text{
+    padding: 0;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    text-align: center;  
+}    
+.move-up{
+    margin: auto;
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.6);
+    width: 800px;
+    color:white;
+    font-family: 'MAVEN PRO';
+    font-size: 30px;
+    padding-top: 130px;
+}           
+/*@keyframes mover-up{
+    0%{ padding-top:260px;}
+    100%{padding-top: 245px;}
+}*/
+/*END EDICION DE TEXTO*/
+
+
+/*MANUELA NAVIAGTION*/
+.manual_change{
+    margin-top: 20px;
+    width: 1200px;
+    display: flex;
+    justify-content: left;
+}
+.manual_change label{
+    font-family: 'questrial';
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    background-color: #DF3A01;
+    border-right: 1px solid white;
+}
+.manual-btn{
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+}
+
+#elec1:checked ~ .first{
+    margin-top: 0;
+}
+#elec2:checked ~ .first{
+    margin-left: -20%;
+}
+#elec3:checked ~ .first{
+    margin-left: -40%;
+}
+#elec4:checked ~ .first{
+    margin-left: -60%;
+}
+/*INFORMATION DESING*/
+.information_carnes{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    padding-top: 50px;
+}
+.carn{
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+
+}
+.carn img{
+    padding-bottom: 2px;
+    border-bottom: 3px solid orangered;
+    width: 350px;
+    height: 150px;
+}
+.carn1_text h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-family: 'maven pro';
+    color: orangered;
+}
+.carn1_text p{
+    margin: auto;
+    font-size: 15px;
+    font-family: 'questrial';
+    color: #848484;
+    width: 300px;
+}
+.carn1_text a{
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    background-color: orangered;
+}
+.carn1_text a:hover{
+    background-color: #B43104;
+    cursor: pointer;
+}
+
+/*CENTRAL OF CONTACT*/
+.central_contact{
+    border-top: 5px solid #DF3A01;
+    padding: 0;
+    width: 1200px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    background-image: url(../img/bg-carnes-naveda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.capa_contact{
+    width: 1200px;
+    height: 150px;
+    background-color: rgb(0,0,0,0.6);
+    color: #F5DA81;
+    font-size: 22px;
+    font-family: 'questrial';
+    margin: 0;
+}
+.capa_contact h2{
+    margin: 0;
+    padding-top: 30px;
+    font-size: 50px;
+    color: white;
+    font-family: 'questrial';
+}
+
+/*FOOTER*/
+footer{
+    font-size: 15px;
+    font-family: 'maven pro';
+    margin: auto;
+    justify-content: center;
+    padding-top: 2px;
+    display: flex;
+    color: white;
+    background: rgb(0,0,0,0.9);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+footer a{
+    
+    padding-left: 10px;
+    color: wheat;
+}
